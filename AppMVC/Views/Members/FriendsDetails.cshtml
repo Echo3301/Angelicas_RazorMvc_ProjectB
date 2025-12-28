@@ -1,0 +1,103 @@
+﻿@model AppMVC.Models.MembersViewModels.FriendsDetailsViewModel
+@{
+    ViewData["Title"] = "View friend";
+}
+@{
+}
+<div class="container px-4 py-4" id="view-friend">
+    <h2 class="pb-2 border-bottom">
+        View details of a friend
+        <a asp-controller="EditFriend" asp-action="EditFriend" asp-route-id="@Model.Friend.FriendId">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                <use xlink:href="#edit" />
+            </svg>
+        </a>
+    </h2>
+
+    <form class="needs-validation" novalidate>
+        <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-5">
+            <div class="col-md-7 col-lg-10">
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <label for="Name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="Name"
+                            value="@Model.Friend.FirstName @Model.Friend.LastName" readonly>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="Email" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="Email"
+                            value="@(Model.Friend.Email ?? "No email found")" readonly>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="Address" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="Address"
+                            value="@(Model.Friend.Address != null ? $"{Model.Friend.Address.StreetAddress}, {Model.Friend.Address.ZipCode} {Model.Friend.Address.City}, {Model.Friend.Address.Country}" : "No address found")"
+                            readonly>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="established" class="form-label">Birthday</label>
+                        <input type="text" class="form-control" id="established"
+                            value="@(Model.Friend.Birthday?.ToString("yyyy-MM-dd") ?? "No birthday found")" readonly>
+                    </div>
+                </div>
+                <!-- Pets -->
+                <div class="row g-1 mt-4">
+                    <h3 class="pb-2">Pets</h3>
+                    <div class="row mb-2 text-center">
+                        <div class="col-md-12 themed-grid-head-col">Name</div>
+                    </div>
+                    @if (Model.Friend.Pets != null && Model.Friend.Pets.Any())
+                    {
+                        @foreach (var item in Model.Friend.Pets)
+                        {
+                            <div class="row mb-2 text-center">
+                                <div class="col-md-12 themed-grid-col">@item.Name (@item.Kind)</div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <div class="row mb-2 text-center">
+                            <div class="col-md-12 themed-grid-col">No pets</div>
+                        </div>
+                    }
+                </div>
+                <!-- Quotes -->
+                <div class="row g-1 mt-4">
+                    <h3 class="pb-2">Quotes</h3>
+                    <div class="row mb-2 text-center">
+                        <div class="col-md-10 themed-grid-head-col">Quote</div>
+                        <div class="col-md-2 themed-grid-head-col">Author</div>
+                    </div>
+                    @if (Model.Friend.Quotes != null && Model.Friend.Quotes.Any())
+                    {
+                        @foreach (var item in Model.Friend.Quotes)
+                        {
+                            <div class="row mb-2 text-center">
+                                <div class="col-md-10 themed-grid-col">@item.QuoteText</div>
+                                <div class="col-md-2 themed-grid-col">@item.Author</div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <div class="row mb-2 text-center">
+                            <div class="col-md-12 themed-grid-col">No quotes</div>
+                        </div>
+                    }
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <a asp-action="FriendsByCountryCity" class="btn btn-secondary">
+                            Back to list
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

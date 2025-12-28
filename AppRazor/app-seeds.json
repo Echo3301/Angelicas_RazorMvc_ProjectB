@@ -1,0 +1,178 @@
+{
+  "Quotes": [
+    {
+      "jsonQuote": "Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me.",
+      "jsonAuthor": "Michael Scott, The Office"
+    },
+    {
+      "jsonQuote": "All you need is love. But a little chocolate now and then doesn’t hurt.",
+      "jsonAuthor": "Charles M. Schulz"
+    },
+    {
+      "jsonQuote": "Before you marry a person, you should first make them use a computer with slow Internet to see who they really are.",
+      "jsonAuthor": "Will Ferrell"
+    },
+    {
+      "jsonQuote": "I love being married. It’s so great to find one special person you want to annoy for the rest of your life.",
+      "jsonAuthor": "Rita Rudner"
+    },
+    {
+      "jsonQuote": "If love is the answer, can you please rephrase the question?",
+      "jsonAuthor": "Lily Tomlin"
+    },
+    {
+      "jsonQuote": "Love can change a person the way a parent can change a baby—awkwardly, and often with a great deal of mess.",
+      "jsonAuthor": "Lemony Snicket"
+    },
+    {
+      "jsonQuote": "Love is a fire. But whether it is going to warm your hearth or burn down your house, you can never tell.",
+      "jsonAuthor": "Joan Crawford"
+    },
+    {
+      "jsonQuote": "A successful marriage requires falling in love many times, always with the same person.",
+      "jsonAuthor": "Mignon McLaughlin"
+    },
+    {
+      "jsonQuote": "I love you with all my belly. I would say my heart, but my belly is bigger.",
+      "jsonAuthor": "Unknown"
+    },
+    {
+      "jsonQuote": "The four most important words in any marriage—I’ll do the dishes.",
+      "jsonAuthor": "Unknown"
+    },
+    {
+      "jsonQuote": "I love you more than coffee but not always before coffee.",
+      "jsonAuthor": "Unknown"
+    },
+    {
+      "jsonQuote": "You know that tingly little feeling you get when you like someone? That’s your common sense leaving your body.",
+      "jsonAuthor": "Unknown"
+    },
+    {
+      "jsonQuote": "I choose a lazy person to do a hard job, because a lazy person will find an easy way to do it.",
+      "jsonAuthor": "Bill Gates"
+    },
+    {
+      "jsonQuote": "Doing nothing is very hard to do… you never know when you’re finished.",
+      "jsonAuthor": "Leslie Nielsen"
+    },
+    {
+      "jsonQuote": "It takes less time to do a thing right, than it does to explain why you did it wrong.",
+      "jsonAuthor": "Henry Wadsworth Longfellow"
+    },
+    {
+      "jsonQuote": "Most of what we call management consists of making it difficult for people to get their work done.",
+      "jsonAuthor": "Peter Drucker"
+    },
+    {
+      "jsonQuote": "It is better to have one person working with you than three people working for you.",
+      "jsonAuthor": "Dwight D. Eisenhower"
+    },
+    {
+      "jsonQuote": "The best way to appreciate your job is to imagine yourself without one.",
+      "jsonAuthor": "Oscar Wilde"
+    },
+    {
+      "jsonQuote": "I hate when I lose things at work, like pens, papers, sanity and dreams.",
+      "jsonAuthor": "Unknown"
+    },
+    {
+      "jsonQuote": "Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep.",
+      "jsonAuthor": "Scott Adams"
+    },
+    {
+      "jsonQuote": "My keyboard must be broken, I keep hitting the escape key, but I’m still at work.",
+      "jsonAuthor": "Unknown"
+    },
+    {
+      "jsonQuote": "Work is against human nature. The proof is that it makes us tired.",
+      "jsonAuthor": "Michel Tournier"
+    },
+    {
+      "jsonQuote": "The reward for good work is more work.",
+      "jsonAuthor": "Francesca Elisia"
+    },
+    {
+      "jsonQuote": "Executive ability is deciding quickly and getting somebody else to do the work.",
+      "jsonAuthor": "Earl Nightingale"
+    },
+    {
+      "jsonQuote": "I never put off till tomorrow what I can do the day after.",
+      "jsonAuthor": "Oscar Wilde"
+    },
+    {
+      "jsonQuote": "I think of myself as something of a connoisseur of procrastination, creative and dogged in my approach to not getting things done.",
+      "jsonAuthor": "Susan Orlean"
+    },
+    {
+      "jsonQuote": "Procrastination is like a credit card: it's a lot of fun until you get the bill.",
+      "jsonAuthor": "Christopher Parker"
+    },
+    {
+      "jsonQuote": "Nothing says work efficiency like panic mode.",
+      "jsonAuthor": "Don Roff"
+    },
+    {
+      "jsonQuote": "I'm going to stop putting things off, starting tomorrow!",
+      "jsonAuthor": "Sam Levenson"
+    },
+    {
+      "jsonQuote": "Procrastination always gives you something to look forward to.",
+      "jsonAuthor": "Joan Konner"
+    },
+    {
+      "jsonQuote": "The time you enjoy wasting is not wasted time.",
+      "jsonAuthor": "Bertrand Russell"
+    },
+    {
+      "jsonQuote": "Procrastination is the art of keeping up with yesterday.",
+      "jsonAuthor": "Don Marquis"
+    },
+    {
+      "jsonQuote": "If it weren't for the last minute, nothing would get done.",
+      "jsonAuthor": "Rita Mae Brown"
+    },
+    {
+      "jsonQuote": "I like work; it fascinates me. I can sit and look at it for hours.",
+      "jsonAuthor": "Jerome K. Jerome"
+    },
+    {
+      "jsonQuote": "Procrastination isn't the problem. It's the solution. It's the universe's way of saying stop, slow down, you move too fast.",
+      "jsonAuthor": "Ellen DeGeneres"
+    },
+    {
+      "jsonQuote": "Procrastinate now, don't put it off.",
+      "jsonAuthor": "Ellen DeGeneres"
+    }
+  ],
+  "Addresses": [
+    {
+      "jsonCountry": "Sweden",
+      "jsonStreets": "Svedjevägen, Ringvägen, Vasagatan, Odenplan, Birger Jarlsgatan, Äppelviksvägen, Kvarnbacksvägen",
+      "jsonCities": "Stockholm, Göteborg, Malmö, Uppsala, Linköping, Örebro"
+    },
+    {
+      "jsonCountry": "Norway",
+      "jsonStreets": "Bygdoy alle, Frognerveien, Pilestredet, Vidars gate, Sågveien, Toftes gate, Gardeveiend",
+      "jsonCities": "Oslo, Bergen, Trondheim, Stavanger, Dramen"
+    },
+    {
+      "jsonCountry": "Denmark",
+      "jsonStreets": "Rolighedsvej, Fensmarkgade, Svanevej, Gröndalsvej, Githersgade, Classensgade, Moltekesvej",
+      "jsonCities": "Köpenhamn, Århus, Odense, Aahlborg, Esbjerg"
+    },
+    {
+      "jsonCountry": "Finland",
+      "jsonStreets": "Arkandiankatu, Liisankatu, Ruoholahdenkatu, Pohjoistranta, Eerikinkatu, Vauhtitie, Itainen Vaideki",
+      "jsonCities": "Helsingfors, Espoo, Tampere, Vaanta, Oulu"
+    }
+  ],
+  "Names": {
+    "jsonFirstNames": "Harry, Lord, Hermione, Albus, Severus, Ron, Draco, Frodo, Gandalf, Sam, Peregrin, Saruman",
+    "jsonLastNames": "Potter, Voldemort, Granger, Dumbledore, Snape, Malfoy, Baggins, the Gray, Gamgee, Took, the White",
+    "jsonPetNames": "Max, Charlie, Cooper, Milo, Rocky, Wanda, Teddy, Duke, Leo, Max, Simba"
+  },
+  "Domains": {
+    "jsonDomainNames": "icloud.com, me.com, mac.com, hotmail.com, gmail.com"
+  }
+}

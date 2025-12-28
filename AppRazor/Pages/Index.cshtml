@@ -1,0 +1,31 @@
+﻿@page
+@model AppRazor.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>This AppRazor is created by Angelica Bergström & inspired by Martin Lenart.</p>
+    <p>Below you can see a overview of how many friends each country have in the database.</p>
+
+    <div class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 py-5">
+
+        @{
+            foreach (var c in Model.CountryCounts)
+            {
+                var svgFile = $"~/SVG/{c.Country}.svg";
+                <div class="col d-flex flex-column align-items-center text-center">
+                    <img src="@Url.Content(svgFile)" alt="@c.Country" width="56" height="56" />
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"> @c.Country</h3>
+                        <p>@c.Count friends</p>
+                        <a asp-page="/Members/FriendsAndPets" asp-route-country="@c.Country" class="btn btn-primary">
+                            See details
+                        </a>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>

@@ -1,0 +1,36 @@
+﻿@page
+@model AppRazor.Pages.Members.FriendsAndPetsModel
+@{
+    ViewData["Title"] = "Friends & Pets in " + Model.Country;
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@attribute [IgnoreAntiforgeryToken]
+
+<div class="text-center">
+    <h1 class="display-4">Overview of @Model.Country</h1>
+</div>
+
+<div class="accordion" id="citiesAccordion">
+    @for (int i = 0; i < Model.CityStats.Count; i++)
+    {
+        var c = Model.CityStats[i];
+        var collapseId = $"collapse{i}";
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading@i">
+                <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#@collapseId" aria-expanded="false"
+                    aria-controls="@collapseId">
+                    <span>@c.City</span>
+                </button>
+            </h2>
+            <div id="@collapseId" class="accordion-collapse collapse" aria-labelledby="heading@i"
+                data-bs-parent="#citiesAccordion">
+                <div class="accordion-body">
+                    <p><strong>Friends:</strong> @c.FriendsCount</p>
+                    <p><strong>Pets:</strong> @c.PetsCount</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
